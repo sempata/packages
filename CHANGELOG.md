@@ -1,10 +1,12 @@
 # Changelog
 
-## React icons 0.2.1 — Unreleased
+## React icons 0.3.0 — Unreleased
 
 - Add the public source repository and issue tracker to package metadata.
 - Document npm, pnpm, Yarn, and Bun installation.
-- Keep the same 1,235 icons and seven collections as version 0.2.0.
+- Add twelve original Gleam icons with glossy silhouettes and candy colors.
+- Include thirty Aegean blue-ink icons from the shared catalog.
+- Export 1,277 icons across nine collections, including the new `aegean` and `gleam` imports.
 
 ## MCP 0.1.1 — Unreleased
 

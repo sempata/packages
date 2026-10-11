@@ -26,6 +26,8 @@ export function Example() {
 
 Available collections: Basic, Pop, Quest, Mascot, Doodle, Arcade, and Puff. Outline icons support custom color and stroke width. Color icons preserve their palette. Imports support tree-shaking and TypeScript. [React documentation](packages/icons-react/README.md).
 
+The source for React `0.3.0` also includes thirty Aegean blue-ink icons and twelve Gleam glossy game-style icons, bringing the catalog to 1,277 icons across nine collections. This release is not yet on npm; build it locally using the development commands below to use `@sempata/icons-react/aegean` or `@sempata/icons-react/gleam`.
+
 ## Local MCP
 
 Requires Node.js 22 or newer. Add this entry to `.cursor/mcp.json` for Cursor or `.mcp.json` for Claude Code. Keep any existing server entries.

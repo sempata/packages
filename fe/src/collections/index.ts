@@ -7,6 +7,8 @@ import { mascot } from './mascot.ts'
 import { doodle } from './doodle.ts'
 import { arcade } from './arcade.ts'
 import { puff } from './puff.ts'
+import { aegean } from './aegean.ts'
+import { gleam } from './gleam.ts'
 
 export const collections: IconCollection[] = [
   basic,
@@ -36,4 +38,6 @@ export const collections: IconCollection[] = [
   doodle,
   arcade,
   puff,
+  aegean,
+  gleam,
 ]

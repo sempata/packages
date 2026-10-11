@@ -21,7 +21,7 @@ npm --prefix fe ci
 npm pack ./packages/icons-react --pack-destination ./packages/icons-react
 ```
 
-Install the generated `.tgz` from your consuming React project using `npm install /path/to/sempata-icons-react-0.2.1.tgz`.
+Install the generated `.tgz` from your consuming React project using `npm install /path/to/sempata-icons-react-0.3.0.tgz`.
 
 ## Usage
 
@@ -36,6 +36,14 @@ import { TRex } from '@sempata/icons-react/mascot'
 ```
 
 Import from `basic`, `pop`, `quest`, `mascot`, `doodle`, `arcade`, or `puff`. Each icon also has a direct import, such as `@sempata/icons-react/quest/sword`. Root imports use collection prefixes, such as `QuestSword`, `BasicShop`, and `MascotTRex`, to keep names unique.
+
+The `0.3.0` build also includes `aegean` and `gleam`. Use the locally built archive for these collections until this version is published:
+
+```tsx
+import { Rocket } from '@sempata/icons-react/gleam'
+
+<Rocket size={40} aria-label="Launch" />
+```
 
 `size` defaults to the collection's preview size. Outline icons accept `color` and `strokeWidth`; color icons retain their original palette. Standard SVG props, CSS classes, styles, events, and React 19 refs are supported. `IconProps` is exported for TypeScript consumers.
 

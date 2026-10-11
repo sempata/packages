@@ -1,0 +1,9 @@
+node_modules/
+dist/
+fe/public/icons/
+.env
+.env.*
+*.tgz
+*.pem
+*.key
+.DS_Store

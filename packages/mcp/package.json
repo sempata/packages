@@ -1,0 +1,51 @@
+{
+  "name": "@sempata/mcp",
+  "version": "0.1.1",
+  "description": "Local MCP tools to search and use free Sempata icons, React components, and CSS motion.",
+  "type": "module",
+  "license": "MIT",
+  "mcpName": "com.sempata/mcp",
+  "homepage": "https://sempata.com/agents/index.html",
+  "bin": {
+    "sempata-mcp": "index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "catalog.mjs",
+    "LICENSE.txt"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.3.1"
+  },
+  "keywords": [
+    "mcp",
+    "icons",
+    "react",
+    "components",
+    "css",
+    "sempata"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sempata/packages.git",
+    "directory": "packages/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/sempata/packages/issues"
+  }
+}

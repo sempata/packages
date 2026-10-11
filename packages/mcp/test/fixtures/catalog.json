@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "version": "9ae339330f738d9c5f02eed3419042b794b5d17111356d0bbdf1dc7c118dc4cc",
+  "resources": [
+    {
+      "id": "components/button-yellow",
+      "type": "component",
+      "name": "Yellow raised button",
+      "description": "A warm yellow CTA with a raised edge and clear focus state.",
+      "category": "Actions / Buttons",
+      "tags": [
+        "action",
+        "cta",
+        "yellow",
+        "primary"
+      ],
+      "addedAt": "2026-10-11T05:14:00.000Z",
+      "formats": [
+        "jsx"
+      ],
+      "license": "Sempata Terms",
+      "licenseUrl": "https://sempata.com/terms",
+      "url": "https://sempata.com/components/actions/buttons/yellow-raised-button",
+      "hash": "ca8a867cf9f987b71f9f206e1f6070239e68225232391f5e0991a51328b3ca85"
+    },
+    {
+      "id": "motion/rise",
+      "type": "motion",
+      "name": "Rise in",
+      "description": "A short entrance for content entering view.",
+      "category": "Entrance / Fade and reveal",
+      "tags": [
+        "entrance",
+        "fade",
+        "reveal"
+      ],
+      "addedAt": "2026-10-11T03:40:33.000Z",
+      "formats": [
+        "css"
+      ],
+      "license": "Sempata Terms",
+      "licenseUrl": "https://sempata.com/terms",
+      "url": "https://sempata.com/motion/entrance/fade-and-reveal/rise-in",
+      "hash": "d0085615b82d1ae44a46f9fbbbec34c04d9ce80a7cbdf82c946291a25b2ed0c6"
+    },
+    {
+      "id": "icons/quest/sword",
+      "type": "icon",
+      "name": "Sword",
+      "description": "Game-ready treasures, tools, and everyday adventures.",
+      "category": "Equipment",
+      "tags": [
+        "sword",
+        "blade",
+        "weapon",
+        "senjata"
+      ],
+      "addedAt": "2026-10-08T19:09:06.000Z",
+      "collection": "quest",
+      "style": "color",
+      "formats": [
+        "svg",
+        "jsx",
+        "react"
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://sempata.com/agents/LICENSE.txt",
+      "url": "https://sempata.com/icons/quest/equipment/sword",
+      "hash": "682fa6414cb4f6449f8bc0a337e322cb13f15f5268b56fe87a129005c51192f2"
+    },
+    {
+      "id": "icons/basic/unreleased-fixture",
+      "type": "icon",
+      "name": "Unreleased test fixture",
+      "description": "Clean outline icons for interfaces, shops, and creative work.",
+      "category": "Commerce",
+      "tags": [
+        "toko",
+        "store",
+        "shop",
+        "umkm",
+        "kios"
+      ],
+      "addedAt": "2026-10-08T19:09:06.000Z",
+      "collection": "basic",
+      "style": "outline",
+      "formats": [
+        "svg",
+        "jsx"
+      ],
+      "license": "MIT",
+      "licenseUrl": "https://sempata.com/agents/LICENSE.txt",
+      "url": "https://sempata.com/icons/basic/unreleased-fixture",
+      "hash": "1524f5800d19ea6e62ce4442df4dc32e77c8f02fc9a7fec8e9bddc6f47540657"
+    }
+  ]
+}

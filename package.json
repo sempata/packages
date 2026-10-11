@@ -1,0 +1,12 @@
+{
+  "name": "sempata-packages",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "npm --prefix fe run icons:package",
+    "test": "npm --prefix fe test && npm --prefix packages/mcp test"
+  }
+}

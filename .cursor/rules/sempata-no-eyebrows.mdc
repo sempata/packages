@@ -1,0 +1,12 @@
+---
+description: Sempata headings must not use decorative eyebrow labels
+alwaysApply: true
+---
+
+# Sempata headings
+
+- Do not add decorative short labels above page, section, or card headings
+  (eyebrows, kickers, or overlines). Start with the actual heading and put
+  supporting context below it.
+- For example, omit "01 / React" above "Install once. Import what you need."
+- Preserve functional badges, form labels, breadcrumbs, and accessibility labels.

@@ -1,0 +1,53 @@
+{
+  "name": "@sempata/icons-react",
+  "version": "0.2.1",
+  "description": "Original Sempata SVG icons as React components.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://sempata.com/packages",
+  "keywords": [
+    "icons",
+    "react",
+    "svg",
+    "sempata",
+    "typescript"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "LICENSE.txt"
+  ],
+  "scripts": {
+    "build": "node ../../fe/scripts/build-icons-react.ts",
+    "prepublishOnly": "npm --prefix ../../fe run icons:export && npm --prefix ../../fe test",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sempata/packages.git",
+    "directory": "packages/icons-react"
+  },
+  "bugs": {
+    "url": "https://github.com/sempata/packages/issues"
+  }
+}

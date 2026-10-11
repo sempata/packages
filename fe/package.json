@@ -1,0 +1,20 @@
+{
+  "name": "sempata-icon-tooling",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "icons:export": "node scripts/export-icons.ts",
+    "icons:package": "node scripts/build-icons-react.ts",
+    "test": "node --test scripts/icons-react.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "rolldown": "1.2.13",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "@types/react": "19.3.0"
+  }
+}

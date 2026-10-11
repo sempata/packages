@@ -4,9 +4,9 @@
 
 - Add the public source repository and issue tracker to package metadata.
 - Document npm, pnpm, Yarn, and Bun installation.
-- Add twelve original Gleam icons with glossy silhouettes and candy colors.
-- Include thirty Aegean blue-ink icons from the shared catalog.
-- Export 1,277 icons across nine collections, including the new `aegean` and `gleam` imports.
+- Add ninety-three original Gleam icons with glossy silhouettes and candy colors.
+- Include fifty Aegean blue-ink icons from the shared catalog.
+- Export 1,378 icons across nine collections, including the new `aegean` and `gleam` imports.
 
 ## MCP 0.1.1 — Unreleased
 

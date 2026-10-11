@@ -37,7 +37,7 @@ import { TRex } from '@sempata/icons-react/mascot'
 
 Import from `basic`, `pop`, `quest`, `mascot`, `doodle`, `arcade`, or `puff`. Each icon also has a direct import, such as `@sempata/icons-react/quest/sword`. Root imports use collection prefixes, such as `QuestSword`, `BasicShop`, and `MascotTRex`, to keep names unique.
 
-The `0.3.0` build also includes `aegean` and `gleam`. Use the locally built archive for these collections until this version is published:
+The `0.3.0` build also includes `aegean` and `gleam`. Gleam 1.1 contains 93 glossy icons, including interface controls, learning subjects, audio, progress, and rankings. Use the locally built archive for these collections until this version is published:
 
 ```tsx
 import { Rocket } from '@sempata/icons-react/gleam'

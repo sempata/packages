@@ -24,9 +24,9 @@ export function Example() {
 }
 ```
 
-Available collections: Basic, Pop, Quest, Mascot, Doodle, Arcade, Puff, Aegean, and Gleam. Outline icons support custom color and stroke width. Color icons preserve their palette. Imports support tree-shaking and TypeScript. [React documentation](packages/icons-react/README.md).
+Available collections: Basic, Pop, Quest, Mascot, Doodle, Arcade, Puff, Aegean, Gleam, and Tinker. Outline icons support custom color and stroke width. Color icons preserve their palette. Imports support tree-shaking and TypeScript. [React documentation](packages/icons-react/README.md).
 
-React `0.3.0` includes fifty Aegean blue-ink icons and ninety-three Gleam glossy icons, bringing the catalog to 1,378 icons across nine collections. Import from `@sempata/icons-react/aegean` or `@sempata/icons-react/gleam` to use these collections.
+React `0.4.0` adds thirty-two Tinker icons for learning interfaces, bringing the catalog to 1,410 icons across ten collections. Import playful illustrations from `@sempata/icons-react/tinker` and secondary interface controls from `@sempata/icons-react/basic`.
 
 ## Local MCP
 

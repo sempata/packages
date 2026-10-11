@@ -21,7 +21,7 @@ npm --prefix fe ci
 npm pack ./packages/icons-react --pack-destination ./packages/icons-react
 ```
 
-Install the generated `.tgz` from your consuming React project using `npm install /path/to/sempata-icons-react-0.3.0.tgz`.
+Install the generated `.tgz` from your consuming React project using `npm install /path/to/sempata-icons-react-0.4.0.tgz`.
 
 ## Usage
 
@@ -35,14 +35,24 @@ import { TRex } from '@sempata/icons-react/mascot'
 <TRex size={48} className="mascot" />
 ```
 
-Import from `basic`, `pop`, `quest`, `mascot`, `doodle`, `arcade`, `puff`, `aegean`, or `gleam`. Each icon also has a direct import, such as `@sempata/icons-react/quest/sword`. Root imports use collection prefixes, such as `QuestSword`, `BasicShop`, and `MascotTRex`, to keep names unique.
+Import from `basic`, `pop`, `quest`, `mascot`, `doodle`, `arcade`, `puff`, `aegean`, `gleam`, or `tinker`. Each icon also has a direct import, such as `@sempata/icons-react/quest/sword`. Root imports use collection prefixes, such as `QuestSword`, `BasicShop`, and `MascotTRex`, to keep names unique.
 
-Version `0.3.0` contains 1,378 icons across nine collections, including fifty Aegean blue-ink icons and ninety-three Gleam glossy icons for interface controls, learning subjects, audio, progress, and rankings:
+Version `0.4.0` contains 1,410 icons across ten collections, including fifty Aegean blue-ink icons and thirty-two Tinker flat learning icons and ninety-three Gleam glossy icons for interface controls, learning subjects, audio, progress, and rankings:
 
 ```tsx
 import { Rocket } from '@sempata/icons-react/gleam'
 
 <Rocket size={40} aria-label="Launch" />
+```
+
+For Lopi-style interfaces, use Tinker for playful learning subjects and rewards, and Basic for secondary controls:
+
+```tsx
+import { Trophy } from '@sempata/icons-react/tinker'
+import { Search } from '@sempata/icons-react/basic'
+
+<Trophy size={40} aria-label="Achievement" />
+<Search size={18} />
 ```
 
 `size` defaults to the collection's preview size. Outline icons accept `color` and `strokeWidth`; color icons retain their original palette. Standard SVG props, CSS classes, styles, events, and React 19 refs are supported. `IconProps` is exported for TypeScript consumers.

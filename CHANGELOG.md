@@ -1,5 +1,11 @@
 # Changelog
 
+## React icons 0.4.0 — 2026-10-12
+
+- Add thirty-two original Tinker icons for study, science, practice, and progress.
+- Preserve all existing 1,378 icons and collection imports.
+- Export 1,410 icons across ten collections with native SVG paths, React 19 props, TypeScript declarations, and MIT notices.
+
 ## React icons 0.3.0 — 2026-10-11
 
 - Add the public source repository and issue tracker to package metadata.

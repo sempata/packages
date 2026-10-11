@@ -9,6 +9,7 @@ import { arcade } from './arcade.ts'
 import { puff } from './puff.ts'
 import { aegean } from './aegean.ts'
 import { gleam } from './gleam.ts'
+import { tinker } from './tinker.ts'
 
 export const collections: IconCollection[] = [
   basic,
@@ -40,4 +41,5 @@ export const collections: IconCollection[] = [
   puff,
   aegean,
   gleam,
+  tinker,
 ]

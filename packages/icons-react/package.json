@@ -1,6 +1,6 @@
 {
   "name": "@sempata/icons-react",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Original Sempata SVG icons as React components.",
   "type": "module",
   "license": "MIT",

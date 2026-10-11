@@ -13,7 +13,7 @@ For Cursor, add this to your project's `.cursor/mcp.json`. For Claude Code, use 
   "mcpServers": {
     "sempata": {
       "command": "npx",
-      "args": ["-y", "@sempata/mcp@0.1.1"]
+      "args": ["-y", "@sempata/mcp@0.1.0"]
     }
   }
 }

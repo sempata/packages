@@ -1,12 +1,12 @@
 # Changelog
 
-## React icons 0.2.1
+## React icons 0.2.1 — Unreleased
 
 - Add the public source repository and issue tracker to package metadata.
 - Document npm, pnpm, Yarn, and Bun installation.
 - Keep the same 1,235 icons and seven collections as version 0.2.0.
 
-## MCP 0.1.1
+## MCP 0.1.1 — Unreleased
 
 - Add the `com.sempata/mcp` registry identity and public source repository.
 - Make package tests independent of the website through local fixtures.

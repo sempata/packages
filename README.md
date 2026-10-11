@@ -35,7 +35,7 @@ Requires Node.js 22 or newer. Add this entry to `.cursor/mcp.json` for Cursor or
   "mcpServers": {
     "sempata": {
       "command": "npx",
-      "args": ["-y", "@sempata/mcp@0.1.1"]
+      "args": ["-y", "@sempata/mcp@0.1.0"]
     }
   }
 }

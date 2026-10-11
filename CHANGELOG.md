@@ -1,6 +1,6 @@
 # Changelog
 
-## React icons 0.3.0 — Unreleased
+## React icons 0.3.0 — 2026-10-11
 
 - Add the public source repository and issue tracker to package metadata.
 - Document npm, pnpm, Yarn, and Bun installation.
@@ -8,7 +8,7 @@
 - Include fifty Aegean blue-ink icons from the shared catalog.
 - Export 1,378 icons across nine collections, including the new `aegean` and `gleam` imports.
 
-## MCP 0.1.1 — Unreleased
+## MCP 0.1.1 — 2026-10-11
 
 - Add the `com.sempata/mcp` registry identity and public source repository.
 - Make package tests independent of the website through local fixtures.

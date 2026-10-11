@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sempata/packages.git",
+    "url": "git+https://github.com/sempata/packages.git",
     "directory": "packages/icons-react"
   },
   "bugs": {

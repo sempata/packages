@@ -4,7 +4,7 @@
 
 - Publish the Sempata frontend skill source and MIT license with a versioned Git release.
 - Add a runnable React 19 + Vite consumer example using published icons, component source, and CSS motion.
-- Prepare automated checks for the example build, behavior tests, skill installation, and MCP fixture tests. Activation requires repository workflow access.
+- Activate GitHub Actions checks for the example build, behavior tests, skill installation, and MCP fixture tests.
 
 ## React icons 0.4.0 — 2026-10-12
 

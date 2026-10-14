@@ -27,4 +27,4 @@ Refresh the website's verified React export snapshot and static MCP catalog afte
 
 For skill releases, tag the reviewed commit as `frontend-skill-v<version>` matching the skill's `metadata.version`. Import the released skill and license into the website's vendored release inputs; generate its static skill file from those inputs rather than editing a second copy.
 
-The prepared CI workflow is in `ci/developer-workflow.yml`. A maintainer with workflow access can activate it by moving it to `.github/workflows/developer-workflow.yml`; remove the draft location in the same change. The current repository CI is not active.
+The active CI workflow is in `.github/workflows/developer-workflow.yml`. Changes to the skill, consumer example, MCP, or workflow trigger checks on pushes to `main` and pull requests. CI runs consumer behavior tests, the production build, skill installation for Codex and Cursor, and MCP fixture tests.

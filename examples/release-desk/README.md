@@ -54,7 +54,7 @@ The form accepts a stable `major.minor.patch` version without leading zeros, pre
 
 Copy awaits the Clipboard API write before reporting success. Missing support or denied permission gives a visible manual-copy instruction. Clipboard writes require a browser-supported secure context such as HTTPS or localhost. The visible Markdown remains selectable.
 
-The Node tests cover validation, stable versions, Markdown generation and escaping, retained and stale previews, exact asynchronous copy writes, and unavailable or rejected clipboard access. A [prepared GitHub Actions workflow](../../ci/developer-workflow.yml) installs dependencies from the lockfile, runs these tests, builds the consumer, and checks skill installation. Automatic CI is not active yet; a repository owner must move this reviewed file to `.github/workflows/developer-workflow.yml` to activate it.
+The Node tests cover validation, stable versions, Markdown generation and escaping, retained and stale previews, exact asynchronous copy writes, and unavailable or rejected clipboard access. The active [GitHub Actions workflow](../../.github/workflows/developer-workflow.yml) installs dependencies from the lockfile, runs these tests, builds the consumer, and checks skill installation for Codex and Cursor on relevant pushes and pull requests.
 
 The first coordinating browser review exercised valid, empty, invalid, and edited drafts; copy success feedback; keyboard focus; and rendering at desktop and a 390px iframe viewport. Clipboard rejection is covered by unit tests rather than a browser permission override. Reduced-motion rules were preserved and reviewed, but the browser's motion preference was not emulated. No Safari, Firefox, real mobile device, or assistive-technology check was performed.
 

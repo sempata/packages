@@ -27,11 +27,13 @@ Restart or reconnect your MCP client after changing its configuration. Ask your 
 
 ## Tools
 
-- `search_resources`: search locally by words, resource type, icon collection, or category. Results default to 20 and are limited to 50; use `offset` to page through them.
+- `search_resources`: search locally by words, resource type (`icon`, `component`, or `motion`), icon collection, or category. CSS motion uses type `motion`; retrieve the exact ID returned by search. Results default to 20 and are limited to 50; use `offset` to page through them.
 - `get_resource`: fetch exact code for an ID returned by search. Supports SVG, inline JSX, verified React package imports, and CSS where available.
 - `get_usage`: retrieve an example, dependencies, usage instructions, and license information. The `react` format is offered only when the icon and its export name were verified in a published `@sempata/icons-react` version. Other icons remain available as SVG and inline JSX.
 
 The tools return source code. Your agent applies it using its existing project tools. Preserve the license notices, keyboard focus states, and reduced-motion rules in the returned code.
+
+For a complete consumer app, run the [Release desk example](../../examples/release-desk). Its README records the selected resources and adaptations. The [frontend skill source](../../skills/sempata-frontend/SKILL.md) is versioned in this repository.
 
 ## Updates and resource use
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## Frontend skill 0.1.0 — 2026-10-14
+
+- Publish the Sempata frontend skill source and MIT license with a versioned Git release.
+- Add a runnable React 19 + Vite consumer example using published icons, component source, and CSS motion.
+- Add continuous checks for the example build, behavior tests, skill installation, and MCP fixture tests.
+
 ## React icons 0.4.0 — 2026-10-12
 
 - Add thirty-two original Tinker icons for study, science, practice, and progress.

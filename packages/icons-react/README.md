@@ -4,6 +4,8 @@ Build interfaces with character using Sempata SVG icons for React 19, with TypeS
 
 Build with an AI agent? Follow the [Sempata frontend skill guide](https://sempata.com/guides/sempata-frontend) and explore [prompt recipes](https://sempata.com/recipes) that connect real previews to code and usage guidance.
 
+Run the [Release desk consumer example](../../examples/release-desk) for a standalone React 19 + Vite app using the published icon package alongside component source and CSS motion.
+
 ## Installation
 
 Requires React 19. Install from npm:

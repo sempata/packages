@@ -1,0 +1,31 @@
+{
+  "id": "icons/basic/file-text",
+  "type": "icon",
+  "name": "File text",
+  "description": "Clean outline icons for interfaces, shops, and creative work.",
+  "category": "Files",
+  "tags": [
+    "file",
+    "document",
+    "text",
+    "article"
+  ],
+  "addedAt": "2026-10-11T10:53:10.151Z",
+  "collection": "basic",
+  "style": "outline",
+  "formats": [
+    "svg",
+    "jsx",
+    "react"
+  ],
+  "license": "MIT",
+  "licenseUrl": "https://sempata.com/agents/LICENSE.txt",
+  "url": "https://sempata.com/icons/basic/files/file-text",
+  "format": "react",
+  "code": "import { FileText } from '@sempata/icons-react/basic'\n\n<FileText size={24} color=\"currentColor\" strokeWidth={1.75} />\n",
+  "instructions": "Install @sempata/icons-react@0.4.0 and React 19. This import was verified in that published version. FileText accepts size and SVG props; use aria-label for a meaningful icon. Preserve the package MIT license.",
+  "dependencies": [
+    "@sempata/icons-react@0.4.0",
+    "react@^19.0.0"
+  ]
+}

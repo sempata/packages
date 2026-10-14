@@ -2,19 +2,40 @@
 
 Build interfaces with character. Free React icons and local tools for developers and their AI coding agents.
 
-This repository contains the source for [`@sempata/icons-react`](https://www.npmjs.com/package/@sempata/icons-react) and [`@sempata/mcp`](https://www.npmjs.com/package/@sempata/mcp), plus the shared vector catalog and icon build tools. Browse the library at [sempata.com](https://sempata.com), or follow the [installation guide](https://sempata.com/packages).
+This repository contains the source for [`@sempata/icons-react`](https://www.npmjs.com/package/@sempata/icons-react), [`@sempata/mcp`](https://www.npmjs.com/package/@sempata/mcp), and the Sempata frontend skill, plus the shared vector catalog and a runnable React example. Browse the library at [sempata.com](https://sempata.com), or follow the [installation guide](https://sempata.com/packages).
 
 ## Frontend skill and prompt recipes
 
 The [Sempata frontend skill](https://sempata.com/guides/sempata-frontend) guides your agent from a project brief to a consistent visual direction, matching resources, and browser review. Install it in your project:
 
 ```sh
-npx skills add https://sempata.com/skills/sempata-frontend/SKILL.md
+npx skills add sempata/packages --skill sempata-frontend
 ```
 
 Pair the skill with the local MCP server below for actual code and usage guidance. Explore [prompt recipes](https://sempata.com/recipes) with live previews, dependencies, and source for a playful CTA, a portfolio photo stack, and a quiet CSS entrance.
 
+Read the [skill source](skills/sempata-frontend/SKILL.md) and its [MIT license](skills/sempata-frontend/LICENSE.txt). The first version is `0.1.0`; its release tag is `frontend-skill-v0.1.0`. To install that release:
+
+```sh
+npx skills add https://github.com/sempata/packages/tree/frontend-skill-v0.1.0/skills/sempata-frontend
+```
+
+The website distributes the same released skill as a generated static file. Skill updates do not require an npm package release.
+
 The public packages and MCP catalog contain free resources. Premium originals on the website use its authenticated paid access.
+
+## Run a real consumer example
+
+[Release desk](examples/release-desk) is a standalone React 19 + Vite app: enter a project name, version, and changes, generate a release preview, then copy Markdown. It uses published React icons, adapted Sempata component source, and CSS motion.
+
+```sh
+git clone https://github.com/sempata/packages.git
+cd packages/examples/release-desk
+npm ci
+npm run dev
+```
+
+Use Node.js 24 for the example. Its dependencies are pinned with a lockfile and resolve from npm rather than linking to this repository's package source. See the example README for resource provenance, licenses, agent setup, tests, and integration limits.
 
 ## React icons
 

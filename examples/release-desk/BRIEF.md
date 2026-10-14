@@ -1,0 +1,7 @@
+Build Release desk, a small frontend tool for an independent developer preparing release notes.
+
+Use the supplied React 19 + Vite project and pinned dependencies. The user enters a project name, a stable version such as 1.4.0, and one change per line. A Preview release action produces a readable preview and Markdown. Copy Markdown must copy that generated text and give honest success or failure feedback. Validate missing project names, versions that are not a stable x.y.z version, and an empty changes list. Keep a valid previous preview when new input is invalid, but make that state clear so the user does not copy a draft they think was updated. No backend, account, storage, or tracking is needed.
+
+Give the interface a coherent, calm design suitable for a developer tool, with a warm accent, readable forms, one tactile primary action, and a quiet entrance for the preview. Use actual Sempata React icons from the published package, a Sempata UI component, and Sempata CSS motion. Integrate selected resource code rather than substituting a made-up lookalike. Keep meaningful labels, keyboard focus, reduced-motion support, and a layout that works on desktop and a 390px-wide viewport. Do not add decorative labels above headings.
+
+Keep the app small. Add meaningful tests for draft validation and Markdown generation. Explain the resources, dependency versions, licenses, and checks actually completed. Do not claim visual or browser testing without doing it.

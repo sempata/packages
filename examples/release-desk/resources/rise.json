@@ -1,0 +1,23 @@
+{
+  "id": "components/rise",
+  "type": "component",
+  "name": "Rise in",
+  "description": "A short entrance for content entering view.",
+  "category": "Entrance / Fade and reveal",
+  "tags": [
+    "entrance",
+    "fade",
+    "reveal"
+  ],
+  "addedAt": "2026-10-11T03:40:33.000Z",
+  "formats": [
+    "css"
+  ],
+  "license": "Sempata Terms",
+  "licenseUrl": "https://sempata.com/terms",
+  "url": "https://sempata.com/components/entrance/fade-and-reveal/rise-in",
+  "format": "css",
+  "code": ".rise-in { animation: rise-in 420ms cubic-bezier(.2,.7,.2,1) both; }\n@keyframes rise-in {\n  from { opacity: 0; transform: translateY(10px); }\n  to { opacity: 1; transform: translateY(0); }\n}\n@media (prefers-reduced-motion: reduce) {\n  .rise-in { animation: none; }\n}",
+  "instructions": "Add this CSS to your stylesheet and apply its class to your element. Keep the prefers-reduced-motion rules and accessible labels for meaningful loading indicators. See Sempata terms.",
+  "dependencies": []
+}

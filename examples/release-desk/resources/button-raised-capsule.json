@@ -1,0 +1,31 @@
+{
+  "id": "components/button-raised-capsule",
+  "type": "component",
+  "name": "Raised capsule button",
+  "description": "A playful blue capsule with a raised face that presses down on hover.",
+  "category": "Actions / Buttons",
+  "tags": [
+    "action",
+    "cta",
+    "blue",
+    "pill",
+    "raised",
+    "press",
+    "quiz",
+    "bato",
+    "let's start"
+  ],
+  "addedAt": "2026-10-11T16:05:24.000Z",
+  "formats": [
+    "jsx"
+  ],
+  "license": "Sempata Terms",
+  "licenseUrl": "https://sempata.com/terms",
+  "url": "https://sempata.com/components/actions/buttons/raised-capsule-button",
+  "format": "jsx",
+  "code": "export function RaisedCapsuleButton() {\n  return (\n    <>\n      <button type=\"button\" className=\"raised-capsule-button\">\n        <span className=\"raised-capsule-button__face\">Get started</span>\n      </button>\n      <style>{`/* Baloo 2 by EkType, SIL OFL 1.1: https://github.com/google/fonts/blob/main/ofl/baloo2/OFL.txt */\n@font-face {\n  font-family: \"Sempata Baloo 2\"; font-style: normal; font-weight: 800;\n  font-display: swap;\n  src: url(\"https://fonts.gstatic.com/s/baloo2/v23/wXK0E3kTposypRydzVT08TS3JnAmtdiayppo_lc.woff2\") format(\"woff2\");\n}\n.raised-capsule-button {\n  box-sizing: border-box; position: relative; isolation: isolate;\n  display: inline-flex; flex-shrink: 0; width: 250px; max-width: 100%;\n  height: 64px; padding: 0; border: 0; border-radius: 90px;\n  background: #0477bd; color: #fffbf1; cursor: pointer;\n  font: 800 28px/1.1 \"Sempata Baloo 2\", \"Trebuchet MS\", sans-serif;\n  text-transform: uppercase;\n}\n.raised-capsule-button__face {\n  display: flex; align-items: center; justify-content: center;\n  width: 100%; height: 100%; border-radius: inherit; background: #299add;\n  transform: translateY(-4px); transition: transform 500ms ease;\n}\n.raised-capsule-button:is(:hover, :focus-visible, :active) .raised-capsule-button__face {\n  transform: translateY(0);\n}\n.raised-capsule-button:focus-visible { outline: 3px solid #0477bd; outline-offset: 5px; }\n@media (prefers-reduced-motion: reduce) {\n  .raised-capsule-button__face { transition: none; transform: none; }\n}`}</style>\n    </>\n  )\n}",
+  "instructions": "Use this React JSX. Snippets without imports or an exported component belong inside a React render function. Install the listed dependencies and include your Tailwind stylesheet when required. Preserve keyboard focus and reduced-motion behavior. Third-party dependencies retain their own licenses; see Sempata terms.",
+  "dependencies": [
+    "react@^19.0.0"
+  ]
+}

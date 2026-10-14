@@ -90,6 +90,9 @@ test("fixture assets validate and search results are bounded and filterable", as
     searchResources(original, { query: "this-resource-does-not-exist" }).total,
     0,
   );
+  const motion = searchResources(original, { type: "motion" });
+  assert.ok(motion.total > 0);
+  assert.ok(motion.results.every((item) => item.formats.includes("css")));
 });
 
 test("catalog and asset caches survive process restarts, deduplicate index loads, and revalidate after one hour", async (t) => {
@@ -206,6 +209,11 @@ test("stdio MCP discovers three tools and returns usable React, SVG, CSS, and de
   assert.ok(
     component.dependencies.some((name) => name.startsWith("tailwindcss@")),
   );
+  const motion = await call("search_resources", { type: "motion", query: "rise" });
+  assert.ok(motion.total > 0);
+  const motionUsage = await call("get_usage", { id: motion.results[0].id, format: "css" });
+  assert.equal(motionUsage.type, "motion");
+  assert.deepEqual(motionUsage.dependencies, []);
   const icon = original.resources.find(
     (item) => item.type === "icon" && item.formats.includes("react"),
   );

@@ -1,0 +1,46 @@
+name: Developer workflow
+
+on:
+  push:
+    branches: [main]
+    paths: ['skills/**', 'examples/**', 'packages/mcp/**', '.github/workflows/developer-workflow.yml']
+  pull_request:
+    paths: ['skills/**', 'examples/**', 'packages/mcp/**', '.github/workflows/developer-workflow.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  consumer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: examples/release-desk/package-lock.json
+      - run: npm ci
+        working-directory: examples/release-desk
+      - run: npm test
+        working-directory: examples/release-desk
+      - run: npm run build
+        working-directory: examples/release-desk
+      - name: Install the released skill format
+        run: npx -y skills@1.7.2 add ../../skills/sempata-frontend --agent codex cursor --yes --copy
+        working-directory: examples/release-desk
+        env:
+          DISABLE_TELEMETRY: '1'
+  mcp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: packages/mcp/package-lock.json
+      - run: npm ci
+        working-directory: packages/mcp
+      - run: npm test
+        working-directory: packages/mcp

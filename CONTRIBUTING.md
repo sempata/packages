@@ -26,3 +26,5 @@ For MCP, use `packages/mcp` instead. Keep `package.json` version and `server.jso
 Refresh the website's verified React export snapshot and static MCP catalog after a React release. Adding resources to the website does not require an MCP implementation release. Keep the setup examples pinned to a tested MCP version.
 
 For skill releases, tag the reviewed commit as `frontend-skill-v<version>` matching the skill's `metadata.version`. Import the released skill and license into the website's vendored release inputs; generate its static skill file from those inputs rather than editing a second copy.
+
+The prepared CI workflow is in `ci/developer-workflow.yml`. A maintainer with workflow access can activate it by moving it to `.github/workflows/developer-workflow.yml`; remove the draft location in the same change. The current repository CI is not active.

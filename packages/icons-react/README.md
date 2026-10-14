@@ -1,6 +1,8 @@
 # @sempata/icons-react
 
-Original Sempata SVG icons for React 19, with TypeScript declarations and tree-shakable imports. Components are generated from the same catalog as [sempata.com](https://sempata.com/icons).
+Build interfaces with character using Sempata SVG icons for React 19, with TypeScript declarations and tree-shakable imports. Components are generated from the same catalog as [sempata.com](https://sempata.com/icons).
+
+Build with an AI agent? Follow the [Sempata frontend skill guide](https://sempata.com/guides/sempata-frontend) and explore [prompt recipes](https://sempata.com/recipes) that connect real previews to code and usage guidance.
 
 ## Installation
 

@@ -4,6 +4,8 @@ Search and use free Sempata icons, React components, and CSS motion from your AI
 
 Requires Node.js 22 or newer. No account or API key is required.
 
+Build interfaces with character. Pair these tools with the [Sempata frontend skill](https://sempata.com/guides/sempata-frontend) for visual direction and browser review, or start from [prompt recipes](https://sempata.com/recipes) with real resource previews and source code.
+
 ## Connect your agent
 
 For Cursor, add this to your project's `.cursor/mcp.json`. For Claude Code, use `.mcp.json`. Other clients that launch stdio MCP servers can use the same command and arguments in their own configuration format.

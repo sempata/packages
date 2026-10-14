@@ -1,8 +1,20 @@
 # Sempata
 
-Free icons and local tools for developers. Always free.
+Build interfaces with character. Free React icons and local tools for developers and their AI coding agents.
 
 This repository contains the source for [`@sempata/icons-react`](https://www.npmjs.com/package/@sempata/icons-react) and [`@sempata/mcp`](https://www.npmjs.com/package/@sempata/mcp), plus the shared vector catalog and icon build tools. Browse the library at [sempata.com](https://sempata.com), or follow the [installation guide](https://sempata.com/packages).
+
+## Frontend skill and prompt recipes
+
+The [Sempata frontend skill](https://sempata.com/guides/sempata-frontend) guides your agent from a project brief to a consistent visual direction, matching resources, and browser review. Install it in your project:
+
+```sh
+npx skills add https://sempata.com/skills/sempata-frontend/SKILL.md
+```
+
+Pair the skill with the local MCP server below for actual code and usage guidance. Explore [prompt recipes](https://sempata.com/recipes) with live previews, dependencies, and source for a playful CTA, a portfolio photo stack, and a quiet CSS entrance.
+
+The public packages and MCP catalog contain free resources. Premium originals on the website use its authenticated paid access.
 
 ## React icons
 

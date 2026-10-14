@@ -1,5 +1,9 @@
 # Changelog
 
+## Video templates 0.1.1 — 2026-10-14
+
+- Build FFmpeg against the installed x264 headers so the source renders on systems with a different x264 ABI than the upstream prebuilt archive. Preserve the template API and rendered samples.
+
 ## Frontend skill 0.2.0 and video templates 0.1.0 — 2026-10-14
 
 - Add named motion and product-video guidance to the frontend skill.

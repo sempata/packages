@@ -1,0 +1,3 @@
+[env]
+# Build against the installed x264 headers instead of a prebuilt archive with a different ABI.
+FFMPEG_FORCE_BUILD = { value = "1", force = true }

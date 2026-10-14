@@ -12,7 +12,7 @@ Use Rust 1.95 or newer. The lockfile pins fframes 1.2.0. Install its native buil
 sudo apt-get install -y pkg-config yasm nasm ffmpeg libx264-dev libclang-dev clang ninja-build
 ```
 
-Other platforms should follow [fframes' official requirements](https://github.com/dmtrKovalenko/fframes#requirements). This release is tested on Linux. Windows and macOS builds have not been verified. A first build may download or compile FFmpeg libraries; later renders reuse the build.
+Other platforms should follow [fframes' official requirements](https://github.com/dmtrKovalenko/fframes#requirements). This release is tested on Linux. Windows and macOS builds have not been verified. This project compiles FFmpeg against your installed x264 headers to avoid an ABI mismatch with prebuilt FFmpeg archives. The first build can take several minutes; later renders reuse the build. Keep `.cargo/config.toml` with the source project.
 
 From this directory:
 

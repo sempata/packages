@@ -1,0 +1,25 @@
+{
+  "brand": "Atlas",
+  "headline": "A calmer place to ship.",
+  "summary": "Bring your release notes, tasks, and next steps into one clear workspace.",
+  "url": "atlas.example",
+  "accent": "#F5C542",
+  "logo": "logo.png",
+  "screenshot": "dashboard.png",
+  "version": "1.4.0",
+  "features": [
+    {
+      "title": "Keep the next step visible",
+      "description": "A focused queue brings your team’s next action into view."
+    },
+    {
+      "title": "Write once, share clearly",
+      "description": "Turn changes into readable release notes in one workspace."
+    },
+    {
+      "title": "Make progress together",
+      "description": "Keep decisions and project updates beside the work."
+    }
+  ],
+  "template": "product-launch"
+}

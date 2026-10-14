@@ -6,6 +6,7 @@ Use Node.js 24 or newer, then follow the setup commands in the README.
 - Update the relevant collection version when adding icons. Keep the 24px viewBox and accessibility behavior.
 - MCP implementation changes belong in `packages/mcp/`. Tests use small local fixtures and do not require a running Sempata website.
 - Frontend skill changes belong in `skills/sempata-frontend/`. Keep the entrypoint concise, preserve the resource licensing boundaries, and check it with the skills installer. Changes to instructions need a new `metadata.version` and an entry in the changelog.
+- Video template changes belong in `packages/video-templates/`. Run `cargo test --locked`, inspect all three configurations for warnings, and review rendered frames. Keep font and source notices; make a new template release before importing its source, archive, and previews into the website.
 - Consumer example changes belong in `examples/release-desk/`. Run `npm ci`, `npm test`, and `npm run build` there. Record the actual resource IDs and keep source notices. Test meaningful input, error, keyboard, narrow-screen, and reduced-motion behavior.
 - Run `npm run build` and `npm test` before opening a pull request. Include a before/after preview for artwork changes and a clear description of behavior changes.
 

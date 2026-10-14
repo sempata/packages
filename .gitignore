@@ -7,3 +7,9 @@ fe/public/icons/
 *.pem
 *.key
 .DS_Store
+
+/packages/video-templates/target/
+/packages/video-templates/frames/
+/packages/video-templates/*.mp4
+/packages/video-templates/*.webm
+/packages/video-templates/*.png

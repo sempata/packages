@@ -1,14 +1,14 @@
 ---
 name: sempata-frontend
-description: Build or refine web interfaces using Sempata icons, UI components, and CSS motion. Use when a user asks to build with Sempata or wants a distinctive frontend using its resource library.
+description: Build or refine web interfaces and product videos using Sempata icons, UI components, CSS motion, and editable video templates. Use when a user asks to build with Sempata or wants a distinctive frontend using its resource library.
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Sempata frontend
 
-Build an interface with a coherent visual direction and resource code that fits the user's project. Sempata is a toolkit of icons, UI components, and motion, not a replacement for the project's framework or design system.
+Build an interface with a coherent visual direction and resource code that fits the user's project. Sempata is a toolkit of icons, UI components, motion, and editable video templates, not a replacement for the project's framework or design system.
 
 ## Choose a direction
 
@@ -33,6 +33,14 @@ The public MCP catalog contains free resources. Premium assets require the websi
 Use the project's existing framework and component conventions. Install only dependencies needed by the selected resource and permitted by the user's task. `@sempata/icons-react` currently requires React 19. Use package imports only when the catalog verifies the icon is published; SVG and inline JSX are available for other public icons.
 
 Adapt size, color, spacing, and motion parameters to the visual direction. Check both the CSS and its example markup: class names, component props, and dependencies must match the actual code. Preserve license notices, meaningful accessible labels, keyboard controls, focus states, and reduced-motion behavior. Keep basic controls familiar and readable while using character in the parts that benefit from it.
+
+## Motion and product videos
+
+Find named effects in [the motion library](https://sempata.com/motion). CSS usage includes example markup; adapt HTML class and style attributes to JSX when using React. Preserve the reduced-motion state. Use the exact resource ID returned by search even when its namespace differs from its type.
+
+For a product video, search MCP with `query: "video"` and `type: "component"`, or browse [video templates](https://sempata.com/video). MCP returns a React player for the rendered sample and usage links to the complete editable fframes project. A player does not render a customized video.
+
+Read the source project's README before building. Replace the fictional Atlas copy, logo, and screenshot in the selected JSON and media directory. Run its validation and frame inspection, render locally, and review the actual result before sharing. Keep the template MIT and font OFL notices. If the rendering toolchain is unavailable, report the limit and supply the editable source rather than claiming a successful render.
 
 ## Check the implemented interface
 

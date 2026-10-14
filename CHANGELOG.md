@@ -1,5 +1,12 @@
 # Changelog
 
+## Frontend skill 0.2.0 and video templates 0.1.0 — 2026-10-14
+
+- Add named motion and product-video guidance to the frontend skill.
+- Publish three complete fframes CPU video templates with editable JSON, original sample visuals, bundled fonts, and validation tests.
+- Add six CSS motion effects to the website and separate Motion and Video directories. Preserve existing MCP resource IDs and redirect established motion page URLs.
+- Expose video sample players and editable-source links through the current MCP catalog format.
+
 ## Frontend skill 0.1.0 — 2026-10-14
 
 - Publish the Sempata frontend skill source and MIT license with a versioned Git release.

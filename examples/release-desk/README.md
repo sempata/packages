@@ -44,7 +44,7 @@ Read [BRIEF.md](BRIEF.md) for the actual consumer task used in the first evaluat
 
 - [Copy](https://sempata.com/icons/basic/files/copy) and [File text](https://sempata.com/icons/basic/files/file-text): verified `Copy` and `FileText` imports from `@sempata/icons-react/basic`. Both use the same outline family and are decorative beside meaningful text.
 - [Raised capsule button](https://sempata.com/components/actions/buttons/raised-capsule-button): actual button/face markup and CSS adapted for form submission, a terracotta palette, readable system typography, and the existing focus and reduced-motion rules. The original Baloo 2 font import was omitted; no remote font is loaded.
-- [Rise in](https://sempata.com/components/entrance/fade-and-reveal/rise-in): supplied `.rise-in` CSS preserved in `src/styles.css`. It runs on a successful preview and disables animation for reduced motion.
+- [Rise in](https://sempata.com/motion/entrance/fade-and-reveal/rise-in): supplied `.rise-in` CSS preserved in `src/styles.css`. It runs on a successful preview and disables animation for reduced motion.
 
 The original MCP resource responses are retained in `resources/`, including exact code, dependencies, source URLs, and license metadata. Resource IDs come from the catalog; do not infer import names from icon labels or rewrite IDs from their type.
 

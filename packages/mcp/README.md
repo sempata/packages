@@ -35,6 +35,12 @@ The tools return source code. Your agent applies it using its existing project t
 
 For a complete consumer app, run the [Release desk example](../../examples/release-desk). Its README records the selected resources and adaptations. The [frontend skill source](../../skills/sempata-frontend/SKILL.md) is versioned in this repository.
 
+## Motion and video
+
+Find motion by name or type `motion`; CSS usage includes actual HTML example markup. Preserve the reduced-motion rules. Resource IDs stay stable when a website page moves.
+
+For video templates, search with `query: "video"` and `type: "component"`. `get_resource` returns a React player for a rendered sample; `get_usage` links the complete editable fframes project and its render instructions. Read the [video template README](../video-templates/README.md) before building. The player does not customize or render a video. Source and samples use MIT; fonts retain their own notices.
+
 ## Updates and resource use
 
 The catalog is checked at most once per hour during tool calls, with conditional HTTP requests when an ETag is available. Cached catalogs and assets survive process restarts under `~/.cache/sempata-mcp`. Source files are fetched only when requested and cached by their content hash. There is no background polling or remote MCP endpoint.

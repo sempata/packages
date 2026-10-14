@@ -14,10 +14,10 @@ npx skills add sempata/packages --skill sempata-frontend
 
 Pair the skill with the local MCP server below for actual code and usage guidance. Explore [prompt recipes](https://sempata.com/recipes) with live previews, dependencies, and source for a playful CTA, a portfolio photo stack, and a quiet CSS entrance.
 
-Read the [skill source](skills/sempata-frontend/SKILL.md) and its [MIT license](skills/sempata-frontend/LICENSE.txt). The first version is `0.1.0`; its release tag is `frontend-skill-v0.1.0`. To install that release:
+Read the [skill source](skills/sempata-frontend/SKILL.md) and its [MIT license](skills/sempata-frontend/LICENSE.txt). The current version is `0.2.0`; its release tag is `frontend-skill-v0.2.0`. To install that release:
 
 ```sh
-npx skills add https://github.com/sempata/packages/tree/frontend-skill-v0.1.0/skills/sempata-frontend
+npx skills add https://github.com/sempata/packages/tree/frontend-skill-v0.2.0/skills/sempata-frontend
 ```
 
 The website distributes the same released skill as a generated static file. Skill updates do not require an npm package release.
@@ -36,6 +36,14 @@ npm run dev
 ```
 
 Use Node.js 24 for the example. Its dependencies are pinned with a lockfile and resolve from npm rather than linking to this repository's package source. See the example README for resource provenance, licenses, agent setup, tests, and integration limits.
+
+## Motion and editable video
+
+Browse [twelve named motion effects](https://sempata.com/motion), with CSS, working example markup, prompts, Replay/Pause controls, and reduced-motion rules. Motion resources keep their existing MCP IDs; use the ID returned by search.
+
+[Video templates](https://sempata.com/video) include Product launch, Feature showcase, and Changelog: complete rendered MP4/WebM samples plus an [editable fframes source project](packages/video-templates). Replace the fictional Atlas content, logo, and screenshot in its JSON inputs, inspect frames, then render using CPU. Source and sample visuals are MIT; Outfit retains its OFL notice. Rust 1.95+ and native build tools are required for rendering, with setup and platform limits in the project README.
+
+Search MCP with `query: "video"` and `type: "component"`. It returns a React sample player and usage links to the full source project. The video library does not provide hosted rendering.
 
 ## React icons
 

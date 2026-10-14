@@ -3,9 +3,9 @@ name: Developer workflow
 on:
   push:
     branches: [main]
-    paths: ['skills/**', 'examples/**', 'packages/mcp/**', '.github/workflows/developer-workflow.yml']
+    paths: ['skills/**', 'examples/**', 'packages/mcp/**', 'packages/video-templates/**', '.github/workflows/developer-workflow.yml']
   pull_request:
-    paths: ['skills/**', 'examples/**', 'packages/mcp/**', '.github/workflows/developer-workflow.yml']
+    paths: ['skills/**', 'examples/**', 'packages/mcp/**', 'packages/video-templates/**', '.github/workflows/developer-workflow.yml']
 
 permissions:
   contents: read
@@ -44,3 +44,28 @@ jobs:
         working-directory: packages/mcp
       - run: npm test
         working-directory: packages/mcp
+
+  video-templates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: packages/video-templates
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Install native render dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pkg-config yasm nasm ffmpeg libx264-dev libclang-dev clang ninja-build
+      - name: Install the tested Rust toolchain
+        run: |
+          rustup toolchain install 1.95.0 --profile minimal
+          rustup default 1.95.0
+      - run: cargo test --locked
+      - name: Inspect and render all three templates
+        run: |
+          for template in product-launch feature-showcase changelog; do
+            cargo run --locked -- --content "content/$template.json" inspect --fail-on warning
+            cargo run --locked -- --content "content/$template.json" --scale 0.25 render --output "$template.mp4"
+            ffprobe -v error -show_entries stream=codec_name,width,height -of json "$template.mp4"
+          done
